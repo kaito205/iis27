@@ -149,13 +149,54 @@ body {
   font-size: 20px;
 }
 
+/* CSS untuk tombol di tengah bagian bawah */
+.btn {
+  background-color: #4caf50; /* Warna latar belakang hijau */
+  border: none; /* Menghilangkan border */
+  color: white; /* Warna teks putih */
+  padding: 15px 32px; /* Padding atas-bawah 15px dan kiri-kanan 32px */
+  text-align: center; /* Teks rata tengah */
+  text-decoration: none; /* Menghilangkan garis bawah teks */
+  display: inline-block; /* Tampilkan sebagai elemen inline-block */
+  font-size: 16px; /* Ukuran font 16px */
+  margin: 4px 2px; /* Margin atas-bawah 4px dan kiri-kanan 2px */
+  cursor: pointer; /* Kursor berubah menjadi pointer saat dihover */
+  border-radius: 12px; /* Membuat sudut border melengkung */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Animasi transisi */
+  position: fixed; /* Posisi tetap */
+  bottom: 20px; /* Jarak dari bawah */
+  left: 50%; /* Jarak dari kiri 50% */
+  transform: translateX(-50%); /* Pindahkan setengah lebar tombol ke kiri */
+  visibility: hidden; /* Awalnya tersembunyi */
+}
+
+.btn:hover {
+  background-color: #45a049; /* Warna latar belakang saat dihover */
+  transform: translateX(-50%) scale(1.05); /* Perbesar tombol sedikit saat dihover */
+}
+
 .media-btn {
-  position: absolute;
-  margin-left: 50%;
-  transform: translateX(-50%);
-  bottom: 25px;
-  visibility: hidden;
-  color: white;
+  position: fixed; /* Posisi tetap */
+  bottom: 80px; /* Jarak dari bawah */
+  left: 50%; /* Jarak dari kiri 50% */
+  transform: translateX(-50%); /* Pindahkan setengah lebar tombol ke kiri */
+  background-color: #333; /* Warna latar belakang gelap */
+  color: white; /* Warna teks putih */
+  border: none; /* Menghilangkan border */
+  padding: 10px; /* Padding 10px */
+  border-radius: 50%; /* Membuat bentuk lingkaran */
+  cursor: pointer; /* Kursor berubah menjadi pointer saat dihover */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Animasi transisi */
+  visibility: hidden; /* Awalnya tersembunyi */
+}
+
+.media-btn:hover {
+  background-color: #555; /* Warna latar belakang saat dihover */
+  transform: translateX(-50%) scale(1.1); /* Perbesar tombol sedikit saat dihover */
+}
+
+.media-button i {
+  font-size: 24px; /* Ukuran ikon 24px */
 }
 
 /*# sourceMappingURL=cieultah.css.map */

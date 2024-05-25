@@ -1,17 +1,18 @@
 function openLetter() {
   document.querySelector(".message-box-1").style.webkitAnimationPlayState =
     "running";
-  //document.querySelector('.message-box-2').style.webkitAnimationPlayState = 'running';
   document.querySelector(".arrow-down-closed").style.visibility = "hidden";
   document.querySelector(".arrow-up-open").style.visibility = "visible";
   document.querySelector(".media-btn").style.visibility = "visible";
-  document.getElementById("audio").play();
+  document.querySelector(".btn").style.visibility = "visible";
+  var audioElement = document.getElementById("audio");
+  audioElement.volume = 0.1;
+  audioElement.play();
 }
 
 var number = 0;
 function mediaBtn() {
   number++;
-
   if (number % 2 == 0) {
     icon = '<i class="fas fa-pause"></i>';
     document.getElementById("audio").play();
@@ -19,7 +20,6 @@ function mediaBtn() {
     icon = '<i class="fas fa-play"></i>';
     document.getElementById("audio").pause();
   }
-
   document.getElementById("media-button").innerHTML = icon;
 }
 
@@ -33,6 +33,7 @@ function swap1() {
     b2++;
   }
 }
+
 function swap2() {
   if (b1 % 2 == 0) {
     document.querySelector(".message-box-2").style.zIndex = "10";
@@ -41,3 +42,10 @@ function swap2() {
     b2++;
   }
 }
+
+// Add this for volume control
+document
+  .getElementById("volume-control")
+  .addEventListener("input", function () {
+    document.getElementById("audio").volume = this.value;
+  });
