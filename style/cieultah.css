@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(#0725b7, #6381f3);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.letter {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 150%);
+  width: 300px;
+  height: 200px;
+  z-index: -10;
+  background: white;
+  box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.1);
+  transition: 1s;
+}
+.letter .arrow-down-closed {
+  width: 300px;
+  height: 125px;
+  position: absolute;
+  z-index: 5;
+  transition: 0.5s;
+}
+.letter .arrow-up-open {
+  width: 300px;
+  height: 125px;
+  position: absolute;
+  z-index: 9;
+  margin-top: -125px;
+  transition: 0.5s 0.5s;
+  visibility: hidden;
+}
+.letter .arrow-down {
+  width: 0;
+  height: 0;
+  border-right: 150px solid transparent;
+  border-top: 100px solid #f0f0f0;
+  border-left: 150px solid transparent;
+  position: absolute;
+  z-index: 1;
+}
+.letter .arrow-up {
+  width: 0;
+  height: 0;
+  border-right: 150px solid transparent;
+  border-bottom: 110px solid #fafafa;
+  border-left: 150px solid transparent;
+  position: absolute;
+  bottom: 0;
+  z-index: 4;
+}
+.letter .arrow-left {
+  width: 0;
+  height: 0;
+  border-right: 150px solid whitesmoke;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  position: absolute;
+  right: 0;
+  z-index: 3;
+}
+.letter .arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  border-left: 150px solid whitesmoke;
+  position: absolute;
+  left: 0;
+  z-index: 3;
+}
+
+.message-box-1,
+.message-box-2 {
+  width: 225px;
+  height: 150px;
+  background-color: white;
+  box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.08);
+  margin-top: 150px;
+  position: absolute;
+  visibility: hidden;
+  text-align: center;
+  padding: 25px 20px;
+}
+
+.message-box-1 {
+  animation: letter1-out 4s ease 750ms forwards;
+  -webkit-animation-play-state: paused;
+}
+
+@keyframes letter1-out {
+  0% {
+    visibility: hidden;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  15% {
+    visibility: hidden;
+  }
+  44% {
+    visibility: visible;
+    margin-top: -125px;
+    widthr: 250px;
+  }
+  100% {
+    visibility: visible;
+    margin-top: 50px;
+    height: 150px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.message-box-2 {
+  animation: letter2-out 4s ease 1s forwards;
+  -webkit-animation-play-state: paused;
+}
+@keyframes letter2-out {
+  0% {
+    visibility: hidden;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  44% {
+    visibility: visible;
+    margin-top: -420px;
+  }
+  100% {
+    visibility: visible;
+    margin-left: 50.5%;
+    transform: translateX(-50.5%);
+    margin-top: -220px;
+    height: 125px;
+  }
+}
+
+.message-box-greeting {
+  font-family: "Dancing Script", cursive;
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.media-btn {
+  position: absolute;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  bottom: 25px;
+  visibility: hidden;
+  color: white;
+}
+
+/*# sourceMappingURL=cieultah.css.map */
+/*# sourceMappingURL=cieultah.scss.map */
+
+/*# sourceMappingURL=cieultah.css.map */
