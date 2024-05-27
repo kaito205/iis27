@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: linear-gradient(#0725b7, #6381f3);
+  background-image: linear-gradient(#000, #081d74);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -151,7 +151,7 @@ body {
 
 /* CSS untuk tombol di tengah bagian bawah */
 .btn {
-  background-color: #4caf50; /* Warna latar belakang hijau */
+  background-color: #272626; /* Warna latar belakang hijau */
   border: none; /* Menghilangkan border */
   color: white; /* Warna teks putih */
   padding: 15px 32px; /* Padding atas-bawah 15px dan kiri-kanan 32px */
@@ -171,7 +171,7 @@ body {
 }
 
 .btn:hover {
-  background-color: #45a049; /* Warna latar belakang saat dihover */
+  background-color: #5a5a5c; /* Warna latar belakang saat dihover */
   transform: translateX(-50%) scale(1.05); /* Perbesar tombol sedikit saat dihover */
 }
 
